@@ -27,9 +27,7 @@ mlops_casas/
 ├── requirements.txt
 └── README.md
 
-yaml
-Copiar
-Editar
+
 
 ---
 
@@ -41,31 +39,23 @@ Editar
 pip install -r requirements.txt
 Ejecutar entrenamiento:
 
-bash
-Copiar
-Editar
+
 python entrenar_modelo.py
 Esto entrena el modelo y registra todo con MLflow.
 
 📈 Visualizar los experimentos con MLflow
-bash
-Copiar
-Editar
+
 mlflow ui
 Luego ir a: http://localhost:5000
 
 🌐 Ejecutar la API con Docker
 Construir imagen:
 
-bash
-Copiar
-Editar
+
 docker build -t mlops-fastapi .
 Ejecutar contenedor:
 
-bash
-Copiar
-Editar
+
 docker run -p 8000:8000 mlops-fastapi
 Probar la API en:
 
@@ -73,18 +63,14 @@ http://localhost:8000/docs
 
 🧪 Endpoint /predecir_precio/
 Método: POST
-json
-Copiar
-Editar
+
 {
   "metros_cuadrados": 70,
   "habitaciones": 3
 }
 🔁 Respuesta:
 
-json
-Copiar
-Editar
+
 {
   "precio_estimado": 123456.78
 }
